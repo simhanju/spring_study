@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>test04</title>
+	</head>
+	<body>
+		<h2>test04</h2>
+		<!-- 타임리프 : th:block 안에 있는 요소를 th:each 반복 조건으로 반복시킨다. -->
+		<th:block th:each="data : ${datas}">
+			<!-- 텍스트로 다이렉트로 쓸땐 [[${데이터 변수명}]] 으로 작성한다.-->
+			[[${data}]]<br>
+		</th:block>
+	</body>
+</html>
